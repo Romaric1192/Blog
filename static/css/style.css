@@ -1,0 +1,50 @@
+body{
+    background-color:white;
+}
+footer{
+    font-size: 24px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.menu_navig a{
+text-decoration: none;
+}
+/* .navigation{
+    position: fixed;
+} */
+.navigation a{
+    color: white;
+    font-size: 24px;
+}
+/* page d'acceuil */
+.aventure{
+    color: #868e96;
+    font-size: 24px;
+}
+.icone_bas{
+    color: #868e96;
+}
+.tete{
+    font: bold;
+    font-size: 24px;
+}
+/* page d'acceuil */
+/* 
+page d'article|liste d'articles */
+.tete_article{
+    margin-top: 3px;
+}
+.tete_article a{
+    margin-top: 5px;
+}
+/* formulaire */
+label{
+    display:block;
+}
+input{
+    display:block;
+    width:100%;
+    margin-bottom:20px; 
+}

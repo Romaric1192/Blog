@@ -1,0 +1,69 @@
+
+{% extends 'baseTemplate.html'%}
+{%load static%}
+{%block titre%}page d'acceuil{%endblock%}
+    {% block contenu%}
+    <!-- jumbotron -->
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Voyage !</h1>
+      <p class="lead">voyager c'est ma vie, je vais vous faire découvrir ma destionation <br> favorites à travers ces articles</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{%url 'articles:articles'%}" role="button">ARTICLES</a>
+      </p>
+    </div> 
+    <!-- fin jumbotron -->
+         <div class="container">
+               <div class="row">
+                     <div class="col-lg-6 col-md-4 mb-4 ">
+                        <img class="w-100" src="{% get_media_prefix%}aventure.webp" alt="aventure" width="509" height="340">
+                     </div>
+                     <div class="col-lg-6 col-md-4 text-justify">
+                           <p class="h2  aventure">mes aventures</p>
+                           <hr class="m-y">
+                           <span class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, at consequuntur assumenda inventore dolores dignissimos quos illo explicabo soluta distinctio unde cum possimus eligendi harum ducimus autem minus, architecto ipsa!</span>
+                     </div>
+               </div>
+               <hr>
+               <div class="row">
+                  <div class="col-lg-4 col-md-4 text-center">
+                        <!-- <span class="fas fa-hiking fa-3x icone mb-3"></span> -->
+                        <!-- 
+                              le stacking icon sur fontaweson permet de superposer deux icones
+                         -->
+                        <span class="fa-stack fa-3x">
+                              <i class="fas fa-circle fa-stack-2x fa-inverse icone_bas"></i>
+                              <i class="fas fa-hiking fa-stack-1x"></i>
+                        </span>
+                        <p>
+                              <span class="texte">Randonné</span><br>
+                              <span class="lead">à pied c'est toujour mieux d'expolrer les endroits où personne n'ose souvent s'aventurier</span>
+
+                        </p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 text-center">
+                        <!-- <span class="fas fa-utensils fa-3x icone mb-3"></span> -->
+                        <span class="fa-stack fa-3x">
+                              <i class="fas fa-circle fa-stack-2x fa-inverse icone_bas"></i>
+                              <i class="fas fa-utensils fa-stack-1x"></i>
+                        </span>
+                        <p>
+                              <span class="texte">Dégustation</span><br>
+                              <span class="lead">aller à la decouverte de nouvels saveurs,des menus en couleurs..</span>
+
+                        </p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 text-center">
+                        <!-- <span class="fas fa-route fa-3x icone mb-3"></span> -->
+                        <span class="fa-stack fa-3x">
+                              <i class="fas fa-circle fa-stack-2x fa-inverse icone_bas"></i>
+                              <i class="fas fa-route fa-stack-1x"></i>
+                        </span>
+                        <p>
+                              <span class="texte">Découverte</span><br>
+                              <span class="lead">aller à la decouverte de la nature, les surprises sont grande dans la nature</span>
+
+                        </p>
+                  </div>
+               </div>
+         </div>
+    {% endblock%}
