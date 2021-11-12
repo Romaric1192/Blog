@@ -1,0 +1,28 @@
+
+{%extends 'baseTemplate.html'%}
+    {%block contenu%}
+        <div class="container mt-4"><h3>{{article.titre}}</h3></div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="container">
+                    <p> 
+                        {{article.contenu}}
+                    </p>
+                    <span>{{article.date_publication}}</span>
+                    <button type="button" class="btn btn-secondary">voir plus..</button> 
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <span><img class="w-100"width="509" height="340" src="{{article.image.url}}" alt="{{article.titre}}"></span>
+            </div>
+        </div>
+        <div class="mb-3"></div>
+        
+        <!-- <img src="{{article.image.url}}" alt="{{article.titre}}">
+        <p> 
+            {{article.contenu}}
+        </p>
+        <span>{{article.date_publication}}</span>
+        <button type="button" class="btn btn-secondary">voir plus..</button> -->
+    {%endblock%}

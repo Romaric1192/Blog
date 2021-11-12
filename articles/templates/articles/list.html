@@ -1,0 +1,26 @@
+
+{%extends 'baseTemplate.html'%}
+{%block titre%}page d'article{%endblock%}
+    {%block contenu%}
+        <!-- <h1 class="titre">les articles</h1>
+        <a href="{% url 'articles:créer'%}" class="btn btn-primary">
+            créer
+        </a> -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-11"><p class="h1">liste des articles</p></div>
+                
+                <div class="col-lg-1"><a href="{% url 'articles:créer'%}" class="btn btn-primary">
+                    créer </a></div>
+            </div>
+        </div><hr>
+        <div class="container">
+            {%for article in articles%}
+                <h2> <a href="{%url 'articles:contenus_article' slug=article.slug%}">{{article.titre}}</a></h2>
+                <p>{{article.contenu}}</p>
+                <span>{{article.date_publication}}</span>
+            {% endfor%}
+        </div>
+        <div class="mb-5"></div>
+       
+    {%endblock%}
